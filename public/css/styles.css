@@ -1,17 +1,166 @@
-body {
-  background-color: #eac926;
-  font-family: "roboto";
-  font-size: 12px;
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    margin-left: 7px;
 }
 
-.titulares {
-  font-size: 24px;
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+  }
+
+  body {
+    background-color: var(--GrisClaro);
+    font-family: 'Roboto', sans-serif;
+    color: var(--GrisOscuro);
+    
+  }
+
+  main section div img{
+    width: 100%;
 }
 
-p precios {
-  font-size: 48px;
+  .header {
+    background-color: var(--Amarillo); 
+  }
+  main section div i{
+
+    color: #39b54a;
+    text-align: right;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    
+    height: 30px;
+    border: 1px solid #39b54a;
+    
+    border-radius: 50%;
+    
+    right: 20px;
+    top: -15px;
+}
+    
+section.banner img{
+    width: 100%;
 }
 
-p desc {
-  font-size: 16px;
+  .precio {
+    font-size: 18px;
+    width: 30%;
+    
+  }
+
+  .descuento {
+    font-size: 16px; 
+    width: 70%;
+    color: #39b54a;
+  }
+
+  .descripcion {
+    font-size: 16px; 
+    
+  }
+
+  .titulos {
+    font-size: 24px; 
+    font-weight: bold;
+  }
+
+  .burger-menu {
+    color: white;
+    background-color: var(--Celeste);
+    position:flex;
+    padding: 10px;
+    width: 40px;
+    border-radius: 10%;
+    justify-content: center;
+    text-align: center;
+    
+    margin: auto;
+
+
+  }
+
+  main section article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+  .titulos-footer {
+    color: var(--GrisOscuro);
+    font-size: 16px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .texto-footer {
+    color: var(--GrisOscuro);
+    font-size: 12px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    color: var(--GrisOscuro);
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .info_producto {
+    display: flex;
+  }
+
+
+   .para_icono {
+    display: flex;
+   } 
+
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px
+}
+
+  .icon {
+    color: var(--Celeste);
+   
+    
+    padding: 10px;
+    
+    
+    justify-content: center;
+    
+  }
+
+  @media (min-width: 425px){
+
+        main section article{
+        width: 42%;
+    }
+}
+
+@media (min-width: 768px){
+
+    main section article{
+    width: 23%;
+}
 }
